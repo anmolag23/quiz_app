@@ -1,12 +1,36 @@
-# React + Vite
+- This is a simple and responsive Quiz App built with React and Tailwind CSS.It allows users to answer multiple-choice questions, track progress, see live scores, and view detailed results at the end.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Features
 
-Currently, two official plugins are available:
+Multiple choice quiz with dynamic questions.
+Timer (30 seconds) for each question.
+Navigation buttons (Previous, Skip, Next, Finish).
+Live score and progress bar.
+Responsive UI (works on mobile & desktop).
+Results page with detailed review of answers.
+Restart option after finishing the quiz.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. App.jsx
 
-## Expanding the ESLint configuration
+Handles routing using React Router.
+Routes:
+/quiz → Quiz page
+/results → Results page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Quiz.jsx
+
+Shows questions with multiple options.
+Timer (30s per question).
+Next, Previous, Skip, Finish buttons.
+Progress bar & live score.
+Responsive design with Tailwind CSS.
+
+3. Results.jsx
+
+Displays final score.
+Shows each question with your answer & correct answer.
+Button to restart the quiz.
+
+4. questions.json
+
+Contains all quiz questions and options in JSON format.
